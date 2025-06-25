@@ -1,10 +1,5 @@
 # Ficticia S.A. - Gestión de Clientes
 
-## Descripción
-
-Sistema para registrar, modificar y eliminar personas con datos personales y atributos específicos.  
-Incluye autenticación vía JWT, backend en Flask y frontend en React.
-
 ---
 
 ## Requisitos
