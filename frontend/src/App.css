@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header */
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Main contenido */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor centrado del login/registro */
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Estilo campos y botones */
+.form-container h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-container button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.form-switch p {
+  margin: 0;
+}
+
+/* Botón para registro en línea (más pequeño, no full width) */
+.btn-register-inline {
+  background-color: #007bff;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.btn-register-inline:hover {
+  background-color: #0056b3;
+}
+
+/* Botón registro (para el otro estado, bloque completo) */
+.btn-register {
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  display: block;
+  width: 100%;
+}
+
+.btn-register:hover {
+  background-color: #0056b3;
+}
+
+/* Link button para iniciar sesión */
+.link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.link-button:hover {
+  color: #0056b3;
+}
+
+/* Estilos post login */
+.content-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.btn-logout {
+  background-color: #dc3545;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background-color: #c82333;
+}
+
+.checkbox-inline {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.checkbox-inline input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkbox-inline label {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+.form-switch.horizontal-center {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente si es necesario */
+  width: 100%;             /* ocupa todo el ancho disponible */
+  margin-top: 1rem;
+}
+
+.form-switch.horizontal-center button {
+  width: auto;             /* ancho según contenido */
+  padding: 0.5rem 1.5rem;
+}
+
