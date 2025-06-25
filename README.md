@@ -80,5 +80,5 @@
 ## Uso
 
 1. Abrí en el navegador la URL que indica el frontend (`http://localhost:5173`).
-2. Logueate con un usuario registrado.
+2. Logueate con el usuario `admin` y la contraseña `admin`.
 3. Registrá, modificá o eliminá personas desde la interfaz.
