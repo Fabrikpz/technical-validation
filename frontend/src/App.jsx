@@ -28,10 +28,13 @@ function App() {
   };
 
   useEffect(() => {
-    const onStorage = () => setIsAuthenticated(!!localStorage.getItem("token"));
-    window.addEventListener("storage", onStorage);
-    return () => window.removeEventListener("storage", onStorage);
-  }, []);
+  const token = localStorage.getItem("token");
+  if (!token) {
+    setIsAuthenticated(false);
+  } else {
+    setIsAuthenticated(true);
+  }
+}, []);
 
   useEffect(() => {
     if (isAuthenticated && !showCreateForm && !editingPersona) {

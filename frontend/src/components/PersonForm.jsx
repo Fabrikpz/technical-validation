@@ -57,7 +57,6 @@ export default function PersonForm({ persona, onSuccess, onCancel }) {
   return (
     <form onSubmit={handleSubmit}>
       <div className="row g-3">
-        {/* Todos los campos igual que antes */}
         <div className="col-md-6">
           <label className="form-label">Nombre completo</label>
           <input
@@ -79,7 +78,7 @@ export default function PersonForm({ persona, onSuccess, onCancel }) {
             value={form.identificacion}
             onChange={handleChange}
             required
-            disabled={!!persona} // opcional: no permitir editar ID en edición
+            disabled={!!persona}
           />
         </div>
 
